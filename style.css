@@ -6,6 +6,7 @@ html{
 }
 h2{
   font-size: 40px;
+  text-shadow: 0px 3px 1.5px rgb(148, 59, 59);
 }
 header{
   display: flex;
@@ -21,7 +22,9 @@ header h1{
   color:#b972ae;
   margin: 35px 0;
   margin-bottom: 50px;
+  text-shadow: 0px 3px 2px white;
 }
+
 header img{
   height: 40px;
   opacity: 0.75;
@@ -29,6 +32,7 @@ header img{
 .join{
   display: flex;
   justify-content: space-around;
+  background-color: #7e4bff40;
 }
 .join h2{
   font-size: 50px;
@@ -38,13 +42,12 @@ header img{
   margin: 20px;
   width: 40%;
   border: 2px solid white;
-  padding: 5px;
+  border-radius: 5px;
+  padding: 2px;
 }
 .join p{
   font-size: 24px;
-  background-color: #7e4bff40;
   padding: 15px;
-  border-radius: 8px;
   color: #edbae1;
 }
 .join_b{
@@ -52,43 +55,89 @@ header img{
   width: 50%;
   padding: 10px;
   border-radius: 10px;
-  background-color: #75b1b1;
+  background-color: #52b6b2;
   color: #000000;
-  border: 2px solid white;
+  font-weight: bold;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 0px 0px 2px 3px rgb(19, 64, 76) inset;
+}
+.join_b:hover{
+  background-color: #3f8986;
+  box-shadow: 0px 0px 2px 3px rgb(19, 64, 76) inset;
+}
+.join_b:active{
+  background-color: #338131;
+  box-shadow: 0px 0px 2px 1.5px rgb(19, 64, 76) inset;
 }
 .join_right{
   display: flex;
   flex-direction: column;
+  border: 3px solid white ;
+  border-radius: 10px;
+  box-shadow: 5px 2px 10px 5px #0000008a;
+}
+@media only screen and (max-width:768px){
+  .join img{
+    display: none;
+  }
+  .join_right{
+    padding-bottom: 30px;
+  }
 }
 .Giovanni{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
   margin: auto;
 }
+
 .Gio_left{
-  width: 70%;;
+  width: 50%;
 }
-.Gio_left{
-  width: 500px;
-  margin-right:50px;
-  font-size: 18px;
-  background-color: #53525231;
+.Gio_left p{
+  width: 70%;
+  margin: auto;
   padding: 16px;
+  background-color: #53525231;
+  font-size: 25px;
   border-radius: 8px;
+}
+.Gio_right{
+  border: 1px solid white;
+  padding: 10px 30px;
+  padding-bottom: 30px ;
+  border-radius: 10px;
+}
+.Gio_right p{
+  margin: 30px 0px;
+}
+@media only screen and (max-width:768px){
+  .Giovanni{
+    flex-direction: column;
+  }
+  .Gio_left{
+    width: 100%;
+  }
+  .Gio_left p{
+    margin: auto;
+  }
+  .Gio_right{
+    margin: auto;
+  }
 }
 
 .about{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
+ margin-top: 70px;
+ border-top: 2px solid rgba(66, 66, 66, 0.423);
+ border-radius: 10px;
 }
 
 .about_left p{
-  width: 70%;
-  margin: auto;
-  font-size: 20px;
+  width: 60%;
+  margin:auto;
+  font-size: 25px;
   background-color: #53525231;
   border-radius: 8px;
   padding: 20px;
@@ -100,14 +149,35 @@ header img{
 }
 .about_right_container{
   display: flex;
+  align-items: center;
+  margin: 2px;
+  border-left: 2px solid rgb(133, 133, 133);
+  border-bottom: 2px solid rgb(133, 133, 133);
+  border-radius: 5px;
 }
 .about_right_container img{
-  width: 40%;
+  width: 50%;
+  padding: 2px;
 }
 .about_right_container h4{
-  margin:18px 5px;
+  margin:20px 5px;
 }
 .about_right_container a{
   color: darkcyan;
   text-decoration: underline;
+}
+@media only screen and (max-width:768px){
+  .about{
+    flex-direction: column;
+  }
+  .about_right{
+    margin-top: 75px;
+  }
+}
+
+  
+footer h5{
+  text-align: left;
+  margin:5px 16px;
+  font-size:20px;
 }
