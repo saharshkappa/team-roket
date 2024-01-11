@@ -1,0 +1,113 @@
+html{
+  text-align: center;
+  background-color: black;
+  font-family: "Rubik";
+  color:#868686;
+}
+h2{
+  font-size: 40px;
+}
+header{
+  display: flex;
+  justify-content: center;
+  background-image: url("./res/Team_Rocket_Logo.svg.png");
+  align-items: baseline;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+header h1{
+  font-size: 60px;
+  color:#b972ae;
+  margin: 35px 0;
+  margin-bottom: 50px;
+}
+header img{
+  height: 40px;
+  opacity: 0.75;
+}
+.join{
+  display: flex;
+  justify-content: space-around;
+}
+.join h2{
+  font-size: 50px;
+}
+.join img{
+  box-sizing: border-box;
+  margin: 20px;
+  width: 40%;
+  border: 2px solid white;
+  padding: 5px;
+}
+.join p{
+  font-size: 24px;
+  background-color: #7e4bff40;
+  padding: 15px;
+  border-radius: 8px;
+  color: #edbae1;
+}
+.join_b{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #75b1b1;
+  color: #000000;
+  border: 2px solid white;
+}
+.join_right{
+  display: flex;
+  flex-direction: column;
+}
+.Giovanni{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+}
+.Gio_left{
+  width: 70%;;
+}
+.Gio_left{
+  width: 500px;
+  margin-right:50px;
+  font-size: 18px;
+  background-color: #53525231;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.about_left p{
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  background-color: #53525231;
+  border-radius: 8px;
+  padding: 20px;
+}
+.about_right{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.about_right_container{
+  display: flex;
+}
+.about_right_container img{
+  width: 40%;
+}
+.about_right_container h4{
+  margin:18px 5px;
+}
+.about_right_container a{
+  color: darkcyan;
+  text-decoration: underline;
+}
